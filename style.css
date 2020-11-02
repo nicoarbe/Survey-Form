@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: gray;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+#form {
+    background-color:  rgb(47, 47, 133);
+    border-radius: 5px;
+    color: white;
+    padding: 50px;
+    margin: 30px 400px 0 400px;
+    max-width: 70%;
+    height: auto;
+}
+
+#name {
+    line-height: 30px;
+    border-radius: 5px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#email {
+    line-height: 30px;
+    border-radius: 5px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#number {
+    line-height: 30px;
+    border-radius: 5px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#dropdown {
+    line-height: 0px;
+    border-radius: 5px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#opinion {
+    line-height: 0px;
+}
+
+#def {
+    padding: 2px;
+    margin: 2px;
+}
+
+#may {
+    padding: 2px;
+    margin: 2px;
+}
+
+#nsure {
+    padding: 2px;
+    margin: 2px;
+}
+
+#hoby {
+    margin-bottom: 30px;
+}
+
+#dropdown2 {
+    line-height: 0px;
+    border-radius: 5px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#suggestion {
+    margin-top: 30px;
+}
+
+#comments {
+    padding-top: 10px;
+    width: 600px;
+}
+
+#button {
+    margin-top: 30px;
+}
+
+#submit {
+    width: 610px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: green; 
+    color: white;
+    font-size: 15px;
+}

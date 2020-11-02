@@ -3,60 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Encuesta de Accesibilidad en Medellín</title>
 </head>
 <body>
     <h1 id="title">Encuesta de la Accesibilidad en Medellín</h1>
     <p id="description">Gracias por ayudarnos a mejorar la accesibilidad en la ciudad</p>
-    <form id="survey-form" action="">
-        <label id="name-label" for="name">Nombre</label>
-        <input id="name" type="text" required placeholder="Ingresa tu nombre">
-        <label id="email-label" for="email">Correo Electrónico</label>
-        <input id="email" type="email" required placeholder="Ingresa tu correo electrónico">
-        <label id="number-label" for="number">Edad</label>
-        <input id="number" type="number" min="1" max="130" required placeholder="Ingresa tu edad en años">
-        <label for="dropdown">¿Cuál es su ocupación actual?</label>
-        <select name="select" id="dropdown" required>
-            <option value="">Estudiante</option>
-            <option value="">Empleado</option>
-            <option value="">Desempleado</option>
-            <option value="">Prefiere no decir</option>
-            <option value="">Otro</option>
-        </select>
-        <p>¿Crees que Medellín puede convertirse en la ciudad más accesible de Colombia?</p>
-        <label for="def">
-            <input id="def" type="radio" name="accessibility">Definitivamente
-        </label>
-        <label for="may">
-            <input id="may" type="radio" name="accessibility">Quizás
-        </label>
-        <label for="nsure">
-            <input id="nsure" type="radio" name="accessibility">No tengo certeza
-        </label>
-        <label for="dropdown2">¿Qué te gusta más de la ciudad?</label>
-        <select name="select" id="dropdown2" required>
-            <option value="gastronomy">Gastronomía</option>
-            <option value="entertainment">Entretenimiento, música y bares</option>
-            <option value="cultural">Eventos culturales</option>
-            <option value="transportation">Transporte</option>
-            <option value="other">Otro</option>
-        </select>
-        <p>¿Qué te gustaría ver más accesible en la ciudad?</p>
-        <label for="shopping"><input id="shopping"type="checkbox" value="shopping" name="accessibility">Centros Comerciales</label>
-        <label for="terminals"><input id="terminals" type="checkbox" value="terminals" name="accessibility">Terminales de Transporte</label>
-        <label for="hotel"><input id="hotel" type="checkbox" value="hotel" name="accessibility">Hoteles</label>
-        <label for="restaurant"><input id="restaurant" type="checkbox" value="restaurant" name="accessibility">Restaurantes</label>
-        <label for="bar"><input id="bar" type="checkbox" value="bar" name="accessibility">Bares</label>
-        <label for="publictr"><input id="publictr" type="checkbox" value="publictr" name="accessibility">Transporte Público</label>
-        <label for="museum"><input id="museum" type="checkbox" value="museum" name="accessibility">Museos</label>
-        <label for="culturalint"><input id="culturalint" type="checkbox" value="culturalint" name="accessibility">Sitios de Interés Cultural</label>
-        <label for="sports"><input id="sports" type="checkbox" value="sports" name="accessibility">Lugares Deportivos</label>
-        <label for="store"><input id="store" type="checkbox" value="store" name="accessibility">Tiendas y Supermercados</label>
-        <label for="street"><input id="street" type="checkbox" value="street" name="accessibility">Calles y Andenes</label>
-        <label for="comments">Déjanos tus comentarios o sugerencias</label>
-        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Ingresa aquí tus comentarios"></textarea>
-        <button id="submit" type="submit">Enviar</button>
-    </form>
-    
+    <div id="form">
+        <form id="survey-form" action="">
+        <div id="personal">
+            <label id="name-label" for="name">Nombre</label>
+            <input id="name" type="text" required placeholder="Ingresa tu nombre">
+            <label id="email-label" for="email">Correo Electrónico</label>
+            <input id="email" type="email" required placeholder="Ingresa tu correo electrónico">
+            <label id="number-label" for="number">Edad</label>
+            <input id="number" type="number" min="1" max="130" required placeholder="Ingresa tu edad en años">
+        </div>
+        <div id="occupation">
+            <label for="dropdown">¿Cuál es su ocupación actual?</label>
+            <select name="select" id="dropdown" required>
+            <option value="student">Estudiante</option>
+            <option value="employee">Empleado</option>
+            <option value="unemployed">Desempleado</option>
+            <option value="dontsay">Prefiere no decir</option>
+            <option value="others">Otro</option>
+            </select>
+        </div>
+        <div id="opinion">
+            <p>¿Crees que Medellín puede convertirse en la ciudad más accesible de Colombia?</p>
+            <label for="def">
+                <input id="def" type="radio" name="accessibility">Definitivamente
+            </label><br>
+            <label for="may">
+                <input id="may" type="radio" name="accessibility">Quizás
+            </label><br>
+            <label for="nsure">
+                <input id="nsure" type="radio" name="accessibility">No tengo certeza
+            </label>
+        </div><br><br>
+        <div id="hobby">
+            <label for="dropdown2">¿Qué te gusta más de la ciudad?</label>
+            <select name="select" id="dropdown2" required>
+                <option value="gastronomy">Gastronomía</option>
+                <option value="entertainment">Entretenimiento, música y bares</option>
+                <option value="cultural">Eventos culturales</option>
+                <option value="transportation">Transporte</option>
+                <option value="other">Otro</option>
+            </select>
+        </div>
+        <div id="places">
+            <p>¿Qué te gustaría ver más accesible en la ciudad?</p>
+            <label for="shopping"><input id="shopping"type="checkbox" value="shopping" name="accessibility">Centros Comerciales</label><br>
+            <label for="terminals"><input id="terminals" type="checkbox" value="terminals" name="accessibility">Terminales de Transporte</label><br>
+            <label for="hotel"><input id="hotel" type="checkbox" value="hotel" name="accessibility">Hoteles</label><br>
+            <label for="restaurant"><input id="restaurant" type="checkbox" value="restaurant" name="accessibility">Restaurantes</label><br>
+            <label for="bar"><input id="bar" type="checkbox" value="bar" name="accessibility">Bares</label><br>
+            <label for="publictr"><input id="publictr" type="checkbox" value="publictr" name="accessibility">Transporte Público</label><br>
+            <label for="museum"><input id="museum" type="checkbox" value="museum" name="accessibility">Museos</label><br>
+            <label for="culturalint"><input id="culturalint" type="checkbox" value="culturalint" name="accessibility">Sitios de Interés Cultural</label><br>
+            <label for="sports"><input id="sports" type="checkbox" value="sports" name="accessibility">Lugares Deportivos</label><br>
+            <label for="store"><input id="store" type="checkbox" value="store" name="accessibility">Tiendas y Supermercados</label><br>
+            <label for="street"><input id="street" type="checkbox" value="street" name="accessibility">Calles y Andenes</label><br>
+        </div>
+        <div id="suggestion">
+            <label for="comments">Déjanos tus comentarios o sugerencias</label><br><br>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Ingresa aquí tus comentarios"></textarea>
+        </div>
+        <div id="button">
+            <button id="submit" type="submit">Enviar</button>
+        </div>
+        </form>
+    </div>
 </body>
 </html>
